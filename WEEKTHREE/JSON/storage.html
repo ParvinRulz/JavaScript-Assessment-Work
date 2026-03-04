@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <form action="">
+
+<!-- UserName Field -->
+      <div class="mb-3">
+        <label >UserName</label>
+        <input type="text" id="userName">
+      </div>
+
+<button id="storeButton">Store</button>
+<button id="retrieveButton">Retrieve</button>
+<button id="removeButton">Remove</button>
+  </form>
+
+<script>
+let userName = document.getElementById("userName").value;// what the user has typed
+let storeBtn = document.getElementById("storeButton");
+let retrieveBtn = document.getElementById("retrieveButton");
+let removeBtn = document.getElementById("removeButton");
+
+storeBtn.addEventListener()
+retrieveBtn.addEventListener()
+removeBtn.addEventListener()
+
+storeBtn.onclick = function(){
+  localStorage.setItem("Name","userName")
+}
+
+</script>
+ 
+</body>
+</html>
