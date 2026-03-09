@@ -1,0 +1,145 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style the body with a nice background */
+body {
+    font-family: 'Arial', sans-serif; 
+    background: #00b4d8; 
+    min-height: 100vh;  
+    padding: 20px;
+}
+
+/* Style the main container */
+.container {
+    max-width: 600px;  
+    margin: 0 auto;  
+    background: white;  
+    border-radius: 10px;  
+    padding: 30px;  /* Space inside the container */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);  
+}
+
+/* Style the main heading */
+h1 {
+    color: #333;  
+    text-align: center;  
+    margin-bottom: 30px;  
+}
+
+/* Style the add task section */
+.add-task {
+    display: flex;  
+    gap: 10px;  
+    margin-bottom: 30px;  
+}
+
+/* Style the input field */
+#taskInput {
+    flex: 1;  
+    padding: 12px;  
+    border: 2px solid #e0e0e0;  
+    border-radius: 5px;  
+    font-size: 16px;  
+    outline: none;  
+}
+
+/* Style the input field when focused */
+#taskInput:focus {
+    border-color: #667eea;  
+}
+
+/* Style the add button */
+button {
+    padding: 12px 24px;  
+    background: #00b4d8;  
+    color: white;  
+    border: none;  
+    border-radius: 5px;  
+    font-size: 16px;  
+    cursor: pointer;  
+    transition:0.3s;  
+}
+
+/* Style button on hover */
+button:hover {
+    background: #00b4d8;  
+}
+
+/* Style the task list container */
+#taskList {
+    display: flex;
+    flex-direction: column;  
+    gap: 10px;  
+}
+
+/* Style individual task items */
+.task-item {
+    display: flex;  
+    align-items: center;  
+    padding: 15px; 
+    background: #d0ecf2;  
+    border-radius: 5px;  
+    gap: 10px;  
+    transition:0.3s;  
+}
+
+/* Style task item on hover */
+.task-item:hover {
+    background: #e9ecef;  
+}
+
+/* Style the checkbox */
+.task-item input[type="checkbox"] {
+    width: 20px;  
+    height: 20px;  
+    cursor: pointer;  
+}
+
+/* Style the task text */
+.task-text {
+    flex: 1;  
+    font-size: 16px;  
+    color: #333;  
+}
+
+/* Style completed tasks */
+.task-text.completed {
+    text-decoration: line-through;  
+    color: #999;  
+}
+
+/* Style action buttons container */
+.task-actions {
+    display: flex;  
+    gap: 5px;  
+}
+
+/* Style action buttons */
+.task-actions button {
+    padding: 5px 10px;  
+    font-size: 14px;  
+}
+
+/* Style edit button */
+.task-actions button:first-child {
+    background: #28a745;  
+}
+
+/* Style edit button on hover */
+.task-actions button:first-child:hover {
+    background: #218838;  
+}
+
+/* Style delete button */
+.task-actions button:last-child {
+    background: #dc3545;  
+}
+
+/* Style delete button on hover */
+.task-actions button:last-child:hover {
+    background: #c82333;  
+}

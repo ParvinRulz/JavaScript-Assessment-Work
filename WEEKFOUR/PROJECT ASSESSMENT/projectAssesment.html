@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My To-Do List</title>
+    <!-- Link to our CSS file (we'll create this next) -->
+    <link rel="stylesheet" href="projectAssesment.css">
+</head>
+<body>
+    <!-- Main container for our app -->
+    <div class="container">
+        <h1>📝 My To-Do List</h1>
+        
+        <!-- Section for adding new tasks -->
+        <div class="add-task">
+            <!-- Input field where users type their task -->
+            <input type="text" id="taskInput" placeholder="Enter a new task...">
+            <!--OR-->
+            <!--<input type="text" id="taskInput" placeholder="Enter a new task..." onkeypress="if(event.key==='Enter') addTask()">-->
+
+            <!-- Button to add the task -->
+            <button onclick="addTask()">Add Task</button>
+        </div>
+        
+        <!-- Section where all tasks will be displayed -->
+        <div id="taskList"></div>
+    </div>
+
+    <!-- Link to our JavaScript file -->
+    <script src="projectAssesment.js"></script>
+</body>
+</html>
